@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://icons8.com/icon/VFaz7MkjAiu0/done" type="image/x-icon">
+    <link rel="stylesheet" href="./home.css">
     <title>Homepage</title>
 </head>
 <body>
-    <h1>URL Shortner : </h1>
+    <div id="title">
+        <h1 >Short Your URL <br> Just Like Your Life 😶‍🌫️ </h1>
+    </div>
+
     <div>
         <form method="post" action="/url">
             <label>Enter URL To  Short</label>
-            <input type="text" name="url" id="" placeholder="www.example.com">
-            <button type="submit">Generate</button>
+            <input type="text" name="url" id="textbox" placeholder="www.example.com">
+            <button type="submit" id="submit">Generate</button>
         </form>
-
+    </div>
+    <div class="generated-url">
+        <div class="generated">
         <% if (locals.id) { %>
-            <p>Generated URL : http://localhost:8001/<%= id %></p>
+            <p><h2>Generated URL :</h2> <h3><a href="http://localhost:8001/<%= id %>" target="_blank"><%= "http://localhost:8001/" + id %></h3></a></p>
         <% } %>
-
-
+        </div>
     </div>
 </body>
 </html>

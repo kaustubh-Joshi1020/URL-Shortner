@@ -1,0 +1,106 @@
+/* home.css */
+
+/* Importing Material-UI components and styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212; /* Dark background color */
+  color: #ffffff; /* Light text color */
+}
+
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  color: #74ff04e0;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+label {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 60px; /* Reduced font size */
+  color: #ffffff; /* Light text color */
+}
+
+#textbox {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 400px;
+  height: 30px;
+  background-color: #1e1e1e; /* Dark input background color */
+  color: #ffffff; /* Light text color */
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #1976D2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#submit:hover {
+  background-color: #1565C0;
+}
+
+.generated-url {
+  display: flex;
+  /* border: solid white 2px; */
+  margin-top: 20px; 
+  color: #388E3C;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.generated{
+  font-size: 30px;
+  /* border: solid rgb(222, 216, 216) 2px; */
+  width: 550px;
+  height: 172px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  border-radius: 100px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-top: 80px;
+    font-size: 40px;
+  }
+
+  label {
+    font-size: 40px;
+  }
+
+  #textbox {
+    width: 200px;
+  }
+}
